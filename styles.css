@@ -1,0 +1,1377 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Maine Bold Italic';
+    src: url('./assets/Maine/Maine-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Book Italic';
+    src: url('./assets/Maine/Maine-BookItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Extra Bold Italic';
+    src: url('./assets/Maine/Maine-ExtraBoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Light Italic';
+    src: url('./assets/Maine/Maine-LightItalic.otf');
+    font-weight: lighter;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Medium Italic';
+    src: url('./assets/Maine/Maine-MediumItalic.otf');
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Regular Italic';
+    src: url('./assets/Maine/Maine-RegularItalic.otf');
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Light';
+    src: url('./assets/Maine/Maine-Light.otf');
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Regular';
+    src: url('./assets/Maine/Maine-Regular.otf');
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Extra Bold';
+    src: url('./assets/Maine/Maine-ExtraBold.otf');
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Book';
+    src: url('./assets/Maine/Maine-Book.otf');
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Maine Medium';
+    src: url('./assets/Maine/Maine-Medium.otf');
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body{
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+}
+
+.landing{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 0%;
+}   
+
+a{
+    text-decoration: none;
+    color: #282828;
+}
+.firstNavbar{
+    z-index: 1;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 4rem;
+}
+ul{
+    list-style-type: none;
+}
+
+.firstNavbar__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstNavbar__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    text-transform: uppercase;
+}
+
+.navLink{
+    position: relative;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: #282828;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    margin: 1rem 1rem;
+}
+
+.active:after{
+    content: "";
+    position: relative;
+    height: 2px;
+    background-color: #282828;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+}
+.navLink:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #282828;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+.navLink:hover:after {
+    width: 75%;
+}
+.darkSwitch{
+    margin: 1rem 2rem;
+    cursor: pointer;
+}
+
+.index__landing--title{
+    color: #282828;
+    font-family: 'Maine Book';
+    font-weight: 400;
+    margin: auto;
+    font-size: 72px;   
+}
+
+.index__landing--title span{
+    font-family: 'Maine Book';
+    font-weight: 600;
+}
+
+.index__landing--subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 3rem auto auto auto;
+    width: 38%;
+    letter-spacing: 0.1rem;
+    line-height: 32px;
+}
+
+.index__landing--subtitle span{
+    font-weight: 600;
+    font-style: italic;
+}
+
+.star{
+    margin: 12.75rem auto 2.55rem auto ;
+}
+.circle{
+    width: 19rem;
+    position: absolute;
+    margin-left: 4.5rem;
+    margin-top: -0.3rem;
+}
+.contact__container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact {
+    text-decoration: none;
+    color: #282828;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.15em;
+    text-align: center;
+}
+.contact__container svg{
+    position: relative;
+    margin: -2.5rem auto auto auto;
+    cursor: default;
+    width: 14.5rem; 
+    transform: rotate(360deg);
+}
+
+.secondNavbar{
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.secondNavbar__left{
+    display: flex;
+}
+.secondNavbar__left svg{
+    margin: 0.68rem;
+}
+.secondNavbar__left div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: bottom;
+}
+.secondNavbar__left--location span{
+    font-family: 'Maine Book Italic';
+    font-style: italic;
+}
+.secondNavbar__left--time{
+    color: #28282838;
+    text-transform: uppercase;
+}
+
+
+
+
+div#animContainer path {
+    stroke: #282828;
+}
+
+
+
+
+.secondNavbar__right ul{
+    display: flex;
+}
+
+
+
+
+
+/* Moving background */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__elements {
+    width: 100%;
+    min-width: 600px;
+}
+.block {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+  
+.block-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blurred-bg {
+    display: block;
+    background: rgba(170, 196, 200, 0.01);
+    backdrop-filter: saturate(180%) blur(6rem);
+    -webkit-backdrop-filter: saturate(180%) blur(5rem);
+    height: 63rem;
+    z-index: 1;
+}
+
+/* Pink Left */
+.circle_l1 {
+    position: absolute;
+    transform-origin: center;
+    left: 0;
+    bottom: 0;
+    background-color: #f3aed877;
+    width: 470px;
+    height: 600px;
+    border-radius: 40rem;
+    transform: translateY() translateX();
+    animation: circle-lp 18s ease-in-out infinite alternate;
+    z-index: -1;
+}
+/* Orange Left */
+.circle_l2 {
+    position: absolute;
+    transform-origin: center;
+    left: 0;
+    background-color: #eb8e7257;
+    width: 390px;
+    height: 530px;
+    border-radius: 40rem;
+    transform: translateY() translateX();
+    animation: circle-lo 18s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+
+/* Pink Rigth */
+.circle_r1 {
+    position: absolute;
+    right: 0;
+    transform-origin: center;
+    background-color: #f3aed877;
+    width: 400px;
+    height: 630px;
+    border-radius: 40rem;
+    transform: translateY() translateX();
+    animation: circle-rp 18s ease-in-out infinite alternate;
+    z-index: -1;
+}
+/* Orange Right */
+.circle_r2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform-origin: center;
+    background-color: #eb8e7257;
+    width: 390px;
+    height: 430px;
+    border-radius: 40rem;
+    transform: translateY() translateX();
+    animation: circle-ro 18s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+@keyframes circle-lp {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0);
+    }
+    50%{
+        transform: translateY(-13rem) translateX(7rem) rotate(20deg);
+    }
+    100%{
+        transform: translateY(-1rem) translateX(10rem) rotate(20deg);
+    }
+}
+@keyframes circle-lo {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0);
+    }
+    50%{
+        transform: translateY(2rem) translateX(5rem) rotate(-20deg);
+    }
+    100%{
+        transform: translateY(-1rem) translateX(10rem) rotate(50deg);
+    }
+}
+
+@keyframes circle-rp {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0);
+    }
+    50%{
+        transform: translateY(-2rem) translateX(-6rem) rotate(-10deg);
+    }
+    100%{
+        transform: translateY(4rem) translateX(-20rem) rotate(15deg);
+    }
+}
+
+@keyframes circle-ro {
+    0% {
+        transform: translateY(0) translateX(-2rem) rotate(50deg);
+    }
+    50%{
+        transform: translateY(-3rem) translateX(-5rem) rotate(10deg);
+    }
+    100%{
+        transform: translateY(-6rem) translateX(-16rem) rotate(50deg);
+    }
+}
+
+
+
+
+
+
+.process__landing{
+    display: grid;
+    grid-template-areas:    
+    "..... title title ..... ....."
+    "..... text1 ..... text2 ....."
+    "..... subtitle  subtitle ..... arrow ";
+    grid-template-columns: 10.8rem 4fr 4.8rem 5fr 10.8rem;
+    grid-template-rows: 13rem auto 13rem;
+    min-height: 41rem;
+    width: 100%;
+    margin-top: 13.5rem;
+}
+
+.process__landing--title{
+    grid-area: title;
+    font-family: "Maine Book";
+    text-align: left;
+    font-weight: 400;
+    color: #282828;
+    font-size: 4.5rem;
+}
+
+
+
+.process__landing--text1{
+    grid-area: text1;
+    margin-top: 3.5rem;
+    text-align: left; 
+    width: 80%;
+}
+.process__landing--text2{
+    grid-area: text2;
+    margin-top: 3.5rem;
+    text-align: left;
+    width: 40%;
+}
+.process__landing--text2 svg{
+    margin-bottom: 1.2rem;
+}
+.process__landing--text2 p span{
+    color: #DE5D37;
+}
+
+.process__landing--subtitle{
+    grid-area: subtitle;
+    font-family: "Maine Regular";
+    font-weight: 200;
+    font-size: 2.3rem;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.process__landing--arrow{
+    grid-area: arrow;
+    margin-top: 5rem;
+    width: 3rem;
+}
+
+.process__path{
+    margin: 65rem auto auto auto ;
+    width: 80%;
+    padding-bottom: 35rem;
+}
+
+
+
+.process__description{
+    display: grid;
+    grid-template-areas:    
+    "..... text1 .. text2 ....."
+    "..... ..... .. ..... ....."
+    "..... text3 .. text4 .....";
+    grid-template-columns: 10.8rem 4fr 2.5rem 4fr 34rem;
+    grid-template-rows: 13rem auto 13rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.process__description--text1{
+    grid-area: text1;
+}
+.process__description--text2{
+    grid-area: text2;
+}
+.process__description--text3{
+    grid-area: text3;
+}
+.process__description--text4{
+    grid-area: text4;
+}
+
+
+
+.process__offer{
+    display: grid;
+    grid-template-areas: 
+    "..... subtitle subtitle subtitle ..... ..... ....."
+    "..... description description description ..... ..... ....."
+    "..... research strategy design development ..... ....."
+    "..... arrow arrow arrow ..... ..... .....";
+    grid-template-columns: 10.8rem auto auto auto auto 15rem 10.8rem;
+    grid-template-rows: 10rem 10rem 20rem;
+    margin-top: 3rem;
+    padding-top: 6rem;
+    background-color: #F2F2F2;
+}
+.process__offer--subtitle{
+    grid-area: subtitle;
+    font-family: "Maine Regular";
+    text-align: left;
+    font-weight: 600;
+    font-size: 4.5rem;
+}
+.process__offer--description{
+    grid-area: description;
+    font-size: 1.4rem;
+    color: #282828;
+}
+.offer__heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #DE5D37;
+    text-transform: uppercase;
+}
+.offer__heading svg{
+    margin: 0.5rem;
+}
+.offer__research{
+    grid-area: research;
+}
+
+.offer__strategy{
+    grid-area: strategy;
+}
+.offer__design{
+    grid-area: design;
+}
+.offer__development{
+    grid-area: development;
+}
+
+
+.offer__item{
+    text-transform: capitalize;
+    list-style-image: url(./assets/Vector.svg);
+    font-weight: 400;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+}
+
+.offer__item span{
+    margin-left: 0.9rem;
+}
+
+
+.offer__contact{
+    grid-area: arrow;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6.5rem;
+    margin-top: 4rem;
+    margin-left: 8rem;
+}
+
+.offer__contact h3{
+    margin-left: 3rem;
+    font-family: "Maine Book";
+    color: #282828;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding-top: 8.5rem;
+    display: grid;
+    grid-template-areas: 
+    "..... title       title title ..... ....."
+    "..... description description ..... ..... ....."
+    "..... sitemap sitemap2    social based arrowUp"
+    "----- copy        copy ..... ..... .....";
+    grid-template-columns: 10.8rem 10rem 18rem 32rem 32rem auto;
+    grid-template-rows: 10rem 15rem 10.7rem auto;
+    color: #282828;
+}
+
+footer h4{
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.footer__link{
+    position: relative;
+    color: #282828;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+    padding-bottom: 0.3rem;
+    letter-spacing: 0.1rem;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.footer__sitemap--links .footer__link:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #282828;
+    width: 0;
+    left: 0;
+    bottom: 0;
+/*     -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); */
+    transform: skewX(100%);
+    -webkit-transition: ease-in 1s ;
+    transition: ease-in 1s ;
+    transition-timing-function: cubic-bezier(.01,.82,.61,.98);
+}
+.footer__sitemap--links .footer__link:hover:after{
+    width: 50%;
+}
+.footer__sitemap--links2 .footer__link:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #282828;
+    width: 0;
+    left: 0;
+    bottom: 0;
+/*     -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); */
+    transform: skewX(100%);
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
+    transition-timing-function: cubic-bezier(.01,.82,.61,.98);
+}
+.footer__sitemap--links2 .footer__link:hover:after{
+    width: 30%;
+}
+.footer__social .footer__link:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #282828;
+    width: 0;
+    left: 0;
+    bottom: 0;
+/*     -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); */
+    transform: skewX(100%);
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
+    transition-timing-function: cubic-bezier(.01,.82,.61,.98);
+}
+.footer__social .footer__link:hover:after{
+    width: 17%;
+}
+
+.footer__title{
+    grid-area: title;
+}
+.footer__title h2{
+    font-family: "Maine Light";
+    font-size: 5.5rem;
+}
+.footer__title span{
+    font-family: 'Maine Bold Italic';
+}
+
+
+.footer__description{
+    grid-area: description;
+    width: 60%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.line{
+    grid-area: -----;
+    margin-left: 3rem;
+}
+
+.footer__sitemap--links{
+    grid-area: sitemap;
+    display: flex;
+    flex-direction: column;
+    word-wrap: wrap;
+}
+
+.footer__sitemap--links2{
+    grid-area: sitemap2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.footer__social{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer__location{
+    grid-area: based;
+    letter-spacing: 0.1rem;
+}
+
+.footer__location svg{
+    margin-bottom: 1rem;
+}
+.footer__location--based span{
+    font-style: italic;
+    font-family: 'Maine';
+    font-weight: 700;
+}
+.footer__location--time{
+    margin-top: 0.7rem;
+    text-transform: uppercase;
+    color: #28282838;
+}
+
+.arrowUp{
+    grid-area: arrowUp;
+    margin: auto;
+}
+
+.copyright{
+    grid-area: copy;
+    margin-top: 14rem;
+}
+
+.footer__block{
+    width: 100%;
+    height: 60%;
+    background-color: #FAFAFA;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+
+/* Pink Rigth */
+.circle__footer--r1 {
+    position: absolute;
+    right: 0;
+    transform-origin: center;
+    background-color: #f3aed877;
+    width: 400px;
+    height: 630px;
+    border-radius: 40rem;
+    transform: translateY() translateX();
+    animation: circle-frp 18s ease-in-out infinite alternate;
+    z-index: -1;
+}
+/* Orange Right */
+.circle__footer--r2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform-origin: center;
+    background-color: #eb8e7257;
+    width: 390px;
+    height: 430px;
+    border-radius: 40rem;
+    transform: translateY() translateX();
+    animation: circle-fro 18s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+@keyframes circle-frp {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0);
+    }
+    50%{
+        transform: translateY(5rem) translateX(2rem) rotate(-5deg);
+    }
+    100%{
+        transform: translateY(-1rem) translateX(-10rem) rotate(-20deg);
+    }
+}
+@keyframes circle-fro {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0);
+    }
+    50%{
+        transform: translateY(-5rem) translateX(-5rem) rotate(-20deg);
+    }
+    100%{
+        transform: translateY(-8rem) translateX(5rem) rotate(-50deg);
+    }
+}
+
+
+
+.work__main{
+    background: rgb(250,250,250);
+    background: linear-gradient(180deg, rgba(250,250,250,1) 50%, rgba(242,242,242,1) 50%);
+}
+
+.work__subtitle{
+    font-family: "Maine Regular";
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem;
+}
+
+.work__grid{
+    display: grid;
+    grid-template-areas:
+    "space1     first  first  second second      space2"
+    "space1     first  first  third  third       space2"
+    "space1     fourth fifth  sixth  sixth       space2"
+    "space1     fourth fifth  seventh seventh    space2";
+    grid-template-columns: 10.8rem auto auto auto auto 10.8rem;
+    grid-template-rows: repeat(5rem);
+    grid-gap: 1rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery__column--l{
+    grid-area: space1;
+}
+.gallery__column--r{
+    grid-area: space2;
+}
+
+
+.gallery__item--1{
+    grid-area: first;
+}
+.gallery__item--2{
+    grid-area: second;
+}
+.gallery__item--3{
+    grid-area: third;
+}
+.gallery__item--4{
+    grid-area: fourth;
+}
+.gallery__item--5{
+    grid-area: fifth;
+}
+.gallery__item--6{
+    grid-area: sixth;
+}
+.gallery__item--7{
+    grid-area: seventh;
+}
+
+
+
+/* ===========================LAURA================================== */
+.process {
+    height: auto;
+    width: 100%; 
+    }
+
+.process__container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
+    height: 100%;
+    margin-top: 11rem;   /*---- def -----*/
+    margin-bottom: 11rem; /*--- def ----*/
+    }
+
+.process__box {
+    display: grid;
+    grid-template-areas:
+    "ref img . txt ind"
+    "sub img . txt ind"
+    "sub img . btn ind";
+    grid-template-columns: 1fr 4fr 1fr 5fr 1fr;
+    grid-template-rows: 14rem auto 7.5rem;
+    min-height: 41rem;
+    width: 100%;
+    }
+
+.process__subtitle {
+    grid-area: sub;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    position: relative; 
+} 
+.process__subtitle--icon{   /*---- def icon svg?----*/
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+}
+.process__subtitle--txt {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #282828;
+    position: absolute;
+    margin-bottom: 32px;
+}    
+
+.process__img {
+    grid-area: img;
+} 
+.process__img--img{
+    width: 100%;
+    height: 100%;  /*----- def proporc-----*/
+    object-fit: cover;
+    background-color: gainsboro;  /*---- def img-----*/
+}
+
+.process__ref {
+    grid-area: ref;
+    display: flex;
+    align-items: flex-start;
+    position: relative; 
+} 
+.process__ref--txt{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: 'Maine Medium';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    position: absolute;
+}
+
+.process__title {
+    grid-area: txt;
+} 
+.process__titlebox {
+    display: flex;
+    align-items: flex-start;
+    position: relative; 
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    } 
+.process__title--txt {
+    color: #282828;
+    font-family: 'Maine Regular'; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    } 
+.process__title--txtgrad {
+    font-family: 'Maine Regular'; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    background: -webkit-linear-gradient(5deg, #ED764A 3%,#F1C5D2 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 20px;
+    } 
+.process__title--p{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    margin-top: 2rem;
+    }
+.process__txtspan{
+    font-family: 'Maine Bold Italic'; 
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
+.process__btn {
+    grid-area: btn;  /*----- definir------*/
+} 
+.process__btn--btn {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer; /*----- definir------*/
+} 
+.process__btnread{
+    transition: 1.5s ease all;
+
+}
+.process__btnread:hover {
+    transform: rotate(45deg);
+}
+
+.process__index {
+    grid-area: ind;
+    text-align: end;
+    align-self: flex-end;
+} 
+.process__index--txt {
+    font-family: 'maine-lightitalic'; 
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+} 
+
+
+/*------------------------SECTION 'SERVICES' -------------------------------*/
+.services {
+    height: auto;
+    width: 100%;
+}
+
+.services__container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
+    height: 100%;
+    margin-top: 11rem;   /*----- def -----*/
+    margin-bottom: 11rem; /*---- def ----*/
+}
+
+.services__box {
+    display: grid;
+    grid-template-areas:
+    "sub txt . img ind";
+    grid-template-columns: 1fr 4fr 1fr 5fr 1fr;
+    height: auto;
+    width: 100%;
+}
+
+.services__subtitle {
+    grid-area: sub;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    position: relative; 
+} 
+.services__subtitle--icon{   /*--- def icon svg?----*/
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+}
+.services__subtitle--txt {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #282828;
+    position: absolute;
+    margin-bottom: 32px;
+}    
+
+.services__txtbox {
+    width: 100%;
+    height: 4.5rem;
+    position: relative;
+}
+.services__txt--numb {
+    font-family: 'Maine Regular'; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 2rem;
+}
+.services__txttitl {
+    font-family: 'Maine Regular'; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-left: 1rem;
+}
+.services__txt--txt {
+    font-family: 'Montserrat', sans-serif;
+    color: #A1A1A1;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 2.5rem;
+    position: absolute;
+    bottom: 0;
+}
+.services__space {
+    height: 3.5rem;
+}
+
+.services__img {
+    grid-area: img;
+    height: 100%;
+} 
+.services__img--ref{
+    height: 5%; 
+    font-family: 'Maine Light Italic'; 
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+    
+.services__index {
+    grid-area: ind;
+    text-align: end;
+    align-self: flex-end;
+} 
+.services__index--txt {
+    font-family: 'Maine Light';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+} 
+
+
+/*------------------------SECTION 'WORK' -------------------------------*/
+
+
+.work {
+    height: auto;
+    width: 100%;
+    margin-top: 11rem;   /*----- def -----*/
+    margin-bottom: 11rem; /*---- def ----*/
+}
+
+.work__legendbox {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
+    height: 100%;
+}
+
+.work__legend {
+    display: grid;
+    grid-template-areas: ". txt .";
+    grid-template-columns: 1fr 10fr 1fr;
+    height: auto;
+    width: 100%;
+}
+.work__legend--icon {
+    grid-area: txt;
+    height: 2rem;
+    width: 2rem;
+}
+.work__legend--txt {
+    grid-area: txt;
+    font-family: 'Maine Regular'; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin-top: 7rem;
+    }
+.work__legendtxtbold {
+    grid-area: txt;
+    font-family: 'Maine Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.1rem;
+    line-height: 4.8rem;
+    }
+
+
+.work__casesbox {
+    background-color: #cfcada36;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: auto;
+    height: 100%;
+    }
+
+.work__cases {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+    
+.work__subtitle {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    position: relative; 
+} 
+.work__subtitle--icon{   /*--- def icon svg?----*/
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+}
+.work__subtitle--txt {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #282828;
+    position: absolute;
+    margin-bottom: 32px;
+    } 
+
+.work__examplebox {
+    height: auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.work__example {
+    width: auto;
+    height: auto;
+}
+.work__example img {
+    width: 350px;
+    height: 550px;
+    object-fit: cover;
+    background-color: #282828;
+}
+.work__example p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    }
+.work__example h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 90%;
+    }
+.work__read {
+    background-color: #cfcada36;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: 100%;
+    height: auto;
+}
+
+.work__readbox {
+    display: grid;
+    grid-template-areas: ". txt .";
+    grid-template-columns: 1fr 10fr 1fr;
+    width: auto;
+    height: 100%;
+    }
+.work__readtxt {
+    grid-area: txt;
+    display: flex;
+    text-decoration: none;
+}
+.work__readicon:hover {
+    transform: translate(1rem);
+    transition: 1.5s;
+}
+.work__read a {
+    font-family: 'Maine Regular'; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-left: 2rem;
+    color: #282828;
+    align-self: center;
+    cursor: pointer;
+    }
+
+
+
+
+/*------------------------SECTION 'RESULT' -------------------------------*/
+
+
+.result {
+    height: auto;
+    width: 100%;
+    margin-top: 11rem;   /*----- def -----*/
+    margin-bottom: 11rem; /*---- def ----*/
+    }
+
+.result__grid {
+    background-color: #5e25da36;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
+    height: 100%;
+}
+
+.result__gridbox {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    width: 100%;
+    height: 35rem;
+    background-color: blueviolet;
+}
+
+.result__gridgraf{
+    width: 100%;
+    margin: 0;
+    top: 0;
+}
+
+.result__gridsub{
+    display: flex;
+    background-color: bisque;
+
+}
+.result__gridind{
+    background-color: aqua;
+}
