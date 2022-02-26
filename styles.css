@@ -1375,3 +1375,14 @@ footer h4{
 .result__gridind{
     background-color: aqua;
 }
+
+
+
+
+.lottie__container{
+    position: relative;
+    display: flex;
+    justify-content:center ;
+    margin-top: 70rem;
+    margin-bottom: 8rem;
+}
