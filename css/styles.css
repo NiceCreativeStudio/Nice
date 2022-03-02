@@ -151,108 +151,6 @@ a{
     transform: scale3d(1, 2, 1);
 }
 
-/*========================================= NAVBAR ========================================= */
-.firstNavbar{
-    z-index: 1;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    margin-left: 4rem;
-}
-ul{
-    list-style-type: none;
-}
-
-.firstNavbar__center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.firstNavbar__right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.secondNavbar{
-    width: 100%;
-    margin-top: 10rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.secondNavbar__left{
-    display: flex;
-}
-.secondNavbar__left svg{
-    margin: 0.68rem;
-}
-.secondNavbar__left div{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: bottom;
-}
-.secondNavbar__left--location span{
-    font-family: 'Maine Book Italic';
-    font-style: italic;
-}
-.secondNavbar__left--time{
-    color: #28282838;
-    text-transform: uppercase;
-}
-
-div#animContainer path {
-    stroke: #282828;
-}
-
-.secondNavbar__right ul{
-    display: flex;
-}
-
-
-
-/* Moving background */
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container__elements {
-    width: 100%;
-    min-width: 600px;
-}
-.block {
-    width: 100%;
-    height: 60%;
-    position: relative;
-    overflow: hidden;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-}
-  
-.block-content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.blurred-bg {
-    display: block;
-    background: rgba(170, 196, 200, 0.01);
-    backdrop-filter: saturate(180%) blur(6rem);
-    -webkit-backdrop-filter: saturate(180%) blur(5rem);
-    height: 63rem;
-    z-index: 1;
-}
-
 /*========================================= NAV INDEX ========================================= */
 
 .header__index {
@@ -274,6 +172,7 @@ div#animContainer path {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     margin: 1rem 1rem;
+    text-transform: uppercase;
 }
 
 .indexactive:after{
@@ -314,18 +213,15 @@ div#animContainer path {
     color: #fdfbfb;
 }
 .logo__index{
-    margin-top: 1rem;
     margin-left: 4rem;
     fill: #fdfbfb;
 }
 .firstNavbar__indexcenter{
-    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .firstNavbar__indexright{
-    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -442,12 +338,114 @@ div#animContainer path {
     }
     .social__navfrig ul{
         display: flex;
-        transform: translateY(-0.25rem);
+        transform: translateY(-3px);
     }
-    .social__navfrig ul li a {
+    .social__navfrig ul li  {
         text-align: end;
     }
 
+
+/*========================================= NAVBAR ========================================= */
+.firstNavbar{
+    z-index: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 4rem;
+}
+ul{
+    list-style-type: none;
+}
+
+.firstNavbar__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstNavbar__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondNavbar{
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondNavbar__left{
+    display: flex;
+}
+.secondNavbar__left svg{
+    margin: 0.68rem;
+}
+.secondNavbar__left div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: bottom;
+}
+.secondNavbar__left--location span{
+    font-family: 'Maine Book Italic';
+    font-style: italic;
+}
+.secondNavbar__left--time{
+    color: #28282838;
+    text-transform: uppercase;
+}
+
+div#animContainer path {
+    stroke: #282828;
+}
+
+.secondNavbar__right ul{
+    display: flex;
+}
+
+
+
+/* Moving background */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__elements {
+    width: 100%;
+    min-width: 600px;
+}
+.block {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+  
+.block-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blurred-bg {
+    display: block;
+    background: rgba(170, 196, 200, 0.01);
+    backdrop-filter: saturate(180%) blur(6rem);
+    -webkit-backdrop-filter: saturate(180%) blur(5rem);
+    height: 63rem;
+    z-index: 1;
+}
 
 /*========================================= FOOTER ========================================= */
 
