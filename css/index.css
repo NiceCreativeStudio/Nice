@@ -347,7 +347,6 @@
         line-height: 1.5rem;
     } 
 
-
 /*------------------------SECTION 'WORK' -------------------------------*/
 
 .work {
@@ -480,7 +479,7 @@
     height: 100%;
     width: 100%;
     filter: grayscale(1);
-    transition: 0.3s ease all;
+    transition: 1s ease all;
 
 }
 .workthreeModul__img:hover{

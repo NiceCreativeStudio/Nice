@@ -409,13 +409,14 @@ div#animContainer path {
     top: 0;
 }
 .social__navbox{
-    height: auto;
+    height: 100%;
     width: auto;
     display: grid;
     grid-template-columns: 50% 50%;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    margin-top: 2rem;
+    align-items: center;
+    align-content: center;
 }
 .social__navleft{
     height: auto;
@@ -437,13 +438,14 @@ div#animContainer path {
         flex-direction: row;
         justify-self: end;
         justify-content: end;
+        align-self: center;
     }
     .social__navfrig ul{
         display: flex;
+        transform: translateY(-0.25rem);
     }
     .social__navfrig ul li a {
         text-align: end;
-        padding-left: 1.5rem;
     }
 
 
