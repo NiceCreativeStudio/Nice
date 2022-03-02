@@ -1,0 +1,184 @@
+
+
+.process__landing{
+    display: grid;
+    grid-template-areas:    
+    "..... title title ..... ....."
+    "..... text1 ..... text2 ....."
+    "..... subtitle  subtitle ..... arrow ";
+    grid-template-columns: 10.8rem 4fr 4.8rem 5fr 10.8rem;
+    grid-template-rows: 13rem auto 13rem;
+    min-height: 41rem;
+    width: 100%;
+    margin-top: 13.5rem;
+}
+
+.process__landing--title{
+    grid-area: title;
+    font-family: "Maine Book";
+    text-align: left;
+    font-weight: 400;
+    color: #282828;
+    font-size: 4.5rem;
+}
+
+
+
+.process__landing--text1{
+    grid-area: text1;
+    margin-top: 3.5rem;
+    text-align: left; 
+    width: 80%;
+}
+.process__landing--text2{
+    grid-area: text2;
+    margin-top: 3.5rem;
+    text-align: left;
+    width: 40%;
+}
+.process__landing--text2 svg{
+    margin-bottom: 1.2rem;
+}
+.process__landing--text2 p span{
+    color: #DE5D37;
+}
+
+.process__landing--subtitle{
+    grid-area: subtitle;
+    font-family: "Maine Regular";
+    font-weight: 200;
+    font-size: 2.3rem;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.process__landing--arrow{
+    grid-area: arrow;
+    margin-top: 5rem;
+    width: 3rem;
+}
+
+.process__path{
+    margin: 65rem auto auto auto ;
+    width: 80%;
+    padding-bottom: 35rem;
+}
+
+
+
+.process__description{
+    display: grid;
+    grid-template-areas:    
+    "..... text1 .. text2 ....."
+    "..... ..... .. ..... ....."
+    "..... text3 .. text4 .....";
+    grid-template-columns: 10.8rem 4fr 2.5rem 4fr 34rem;
+    grid-template-rows: 13rem auto 13rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.process__description--text1{
+    grid-area: text1;
+}
+.process__description--text2{
+    grid-area: text2;
+}
+.process__description--text3{
+    grid-area: text3;
+}
+.process__description--text4{
+    grid-area: text4;
+}
+
+
+
+.process__offer{
+    display: grid;
+    grid-template-areas: 
+    "..... subtitle subtitle subtitle ..... ..... ....."
+    "..... description description description ..... ..... ....."
+    "..... research strategy design development ..... ....."
+    "..... arrow arrow arrow ..... ..... .....";
+    grid-template-columns: 10.8rem auto auto auto auto 15rem 10.8rem;
+    grid-template-rows: 10rem 10rem 20rem;
+    margin-top: 3rem;
+    padding-top: 6rem;
+    background-color: #F2F2F2;
+}
+.process__offer--subtitle{
+    grid-area: subtitle;
+    font-family: "Maine Regular";
+    text-align: left;
+    font-weight: 600;
+    font-size: 4.5rem;
+}
+.process__offer--description{
+    grid-area: description;
+    font-size: 1.4rem;
+    color: #282828;
+}
+.offer__heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #DE5D37;
+    text-transform: uppercase;
+}
+.offer__heading svg{
+    margin: 0.5rem;
+}
+.offer__research{
+    grid-area: research;
+}
+
+.offer__strategy{
+    grid-area: strategy;
+}
+.offer__design{
+    grid-area: design;
+}
+.offer__development{
+    grid-area: development;
+}
+
+
+.offer__item{
+    text-transform: capitalize;
+    list-style-image: url(./assets/Vector.svg);
+    font-weight: 400;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+}
+
+.offer__item span{
+    margin-left: 0.9rem;
+}
+
+
+.offer__contact{
+    grid-area: arrow;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6.5rem;
+    margin-top: 4rem;
+    margin-left: 8rem;
+}
+
+.offer__contact h3{
+    margin-left: 3rem;
+    font-family: "Maine Book";
+    color: #282828;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.lottie__container{
+    position: relative;
+    display: flex;
+    justify-content:center ;
+    margin-top: 70rem;
+    margin-bottom: 8rem;
+}
+

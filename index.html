@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>Nice - Creative Studio</title>
 </head>
 <body onload="startTime()">
@@ -27,9 +34,9 @@
 
                     <!-- CENTER -->
                     <ul class="firstNavbar__center">
-                        <li><a class="navLink" href="./work.html">About</a></li>
-                        <li><a class="navLink" href="./process.html">Process</a></li>
-                        <li><a class="navLink" href="./work.html">Work</a></li>
+                        <li class="content__item"><a class="navLink navLink--under" href="./pages/about.html">About</a></li>
+                        <li class="content__item"><a class="navLink navLink--under active" href="./pages/process.html">Process</a></li>
+                        <li class="content__item"><a class="navLink navLink--under" href="./pages/work.html">Work</a></li>
                     </ul>
 
                     <!-- RIGHT -->
@@ -97,9 +104,9 @@
                     <!-- RIGHT -->
                     <div class="secondNavbar__right">
                         <ul>
-                            <li><a class="navLink" href="">Instagram</a></li>
-                            <li><a class="navLink" href="">Behance</a></li>
-                            <li><a class="navLink" href="">Dribble</a></li>
+                            <li class="content__item"><a class="navLink navLink--under" href="">Instagram</a></li>
+                            <li class="content__item"><a class="navLink navLink--under" href="">Behance</a></li>
+                            <li class="content__item"><a class="navLink navLink--under" href="">Dribble</a></li>
                         </ul>
                     </div>
 
@@ -121,32 +128,34 @@
     
     
     <main>
-        <section class="process">
-            <div class="process__container">
-                <div class="process__box">
-                    <div class="process__subtitle">
-                        <svg class="process__subtitle process__subtitle--icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+        <section class="Process">
+            <div class="Process__container">
+                <div class="Process__box">
+                    <div class="Process__subtitle">
+                        <svg class="Process__subtitle Process__subtitle--icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.00022 13.9158L6.04914 10.3484L5.90858 10.0914L5.65154 9.95081L2.08421 8.00022L5.65163 6.04914L5.9086 5.9086L6.04914 5.65163L8.00022 2.08421L9.95081 5.65154L10.0914 5.90858L10.3484 6.04914L13.9158 8.00022L10.3485 9.95081L10.0914 10.0914L9.95081 10.3485L8.00022 13.9158Z" stroke="#282828" stroke-width="2"/>
                         </svg>
-                        <h4 class="process__subtitle process__subtitle--txt">our process</h4>
+                        <h4 class="Process__subtitle Process__subtitle--txt">our Process</h4>
                     </div>
-                    <div class="process__img">
-                        <img class="process__img process__img--img" src="https://ik.imagekit.io/nicecreativestudio/IMG_4907-original_1__goLuQY8g5t.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645706695484" alt="" srcset="">
+                    <div class="Process__img">
+                        <img class="Process__img Process__img--img" src="https://ik.imagekit.io/nicecreativestudio/olena-sergienko-dIMJWLx1YbE-unsplash_glVWG6aole6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1646083019523" alt="" srcset="">
                     </div>
-                    <div class="process__ref">
-                        <p class="process__ref process__ref--txt">fig 01. the tools</p>
+                    <div class="Process__ref">
+                        <p class="Process__ref Process__ref--txt">fig 01. the tools</p>
                     </div>
-                    <div class="process__title">
-                        <article class="process__titlebox">
-                            <h2 class="process__title process__title--txt">The </h2>
-                            <h2 class="process__title process__title--txtgrad">Holistic</h2>
+                    <div class="Process__title">
+                        <article class="Process__titlebox">
+                            <h2 class="Process__title Process__title--txt">The </h2>
+                            <h2 class="Process__title Process__title--txtgrad">Holistic</h2>
                         </article>
-                        <h2 class="process__title process__title--txt" >Principle</h2>
-                        <p class="process__title process__title--p">We approach each project  as an interconnected piece that has <span class="process__txtspan">relationships</span> not only with its users but also with its founders and the environment it affects.  As in life, we make <span class="process__txtspan">connections</span> that bring support to our processes, creating strong solutions that <span class="process__txtspan">last</span>. </p>
+                        <h2 class="Process__title Process__title--txt" >Principle</h2>
+                        <p class="Process__title Process__title--p">We approach each project  as an interconnected piece that has <span class="Process__txtspan">relationships</span> not only with its users but also with its founders and the environment it affects.  As in life, we make <span class="Process__txtspan">connections</span> that bring support to our Processes, creating strong solutions that <span class="Process__txtspan">last</span>. </p>
                     </div>
-                    <div class="process__btn">
+                    <div class="Process__btn">
                         <a href="">
-                            <svg class="process__btnread" width="126" height="121" viewBox="0 0 126 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="Process__btnread" width="126" height="121" viewBox="0 0 126 121" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1314_2323)">
                                 <path d="M77.0702 1.81488C76.8883 3.52651 75.2912 4.22063 73.4583 3.61414C71.7654 5.87602 70.3132 8.30831 69.1253 10.8716L68.3436 13.5671L65.4258 13.2504L68.2628 3.04129L66.7668 2.09119L66.8544 1.80139L72.1173 0.015625L72.3801 0.123467L68.8895 9.55763C71.8747 3.00089 74.0985 0.23126 76.0055 0.43342C76.1708 0.442645 76.3321 0.487394 76.4785 0.564542C76.6249 0.64169 76.7529 0.749423 76.854 0.8805C76.955 1.01158 77.0266 1.1629 77.064 1.32413C77.1013 1.48535 77.1034 1.65275 77.0702 1.81488Z" fill="#282828"/>
                                 <path d="M86.4774 13.4021L87.0636 13.9884C85.042 16.0909 82.4543 17.3577 79.4624 16.2728C76.5917 15.2417 75.3517 12.4722 76.5647 9.10287C78.0674 4.91815 82.2724 2.12825 87.1714 3.88705C89.5838 4.75634 90.5407 6.4613 89.8669 8.16618C89.038 10.4708 86.5716 11.3603 79.7588 10.0799L79.6915 10.2552C78.903 12.4655 79.4624 14.0962 81.2616 14.7432C83.2495 15.4507 85.1431 14.5611 86.4774 13.4021ZM80.1969 9.11628C84.1322 9.5543 86.484 8.685 87.1714 6.75099C87.2591 6.58925 87.3086 6.40948 87.3157 6.2256C87.3229 6.04172 87.2877 5.85867 87.2128 5.69059C87.1378 5.52251 87.0252 5.37394 86.8836 5.25634C86.7421 5.13874 86.5755 5.0553 86.3965 5.01244C84.3142 4.26445 81.6726 6.1243 80.1969 9.11628Z" fill="#282828"/>
@@ -195,16 +204,14 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="process__index">
-                        <p class="process__index process__index--txt" >01</p>
+                    <div class="Process__index">
+                        <p class="Process__index Process__index--txt" >01</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
+<!------------------------------------------------------------- Services --------------------------------------------------------------------------->
         <section class="services">
             <div class="services__container">
                 <div class="services__box">
@@ -216,23 +223,23 @@
                     </div>
                     <div class="services__txt">
                         <article class="services__txtbox">
-                            <p class="services__txt services__txt--numb">01  <span class="services__txttitl">UX UI</span></p>
-                            <p class="services__txt services__txt--txt">Mobile / Web / B2B / B2C / SaaS</p>
+                            <h4>01  <span class="services__txttitl">UX UI</span></h4>
+                            <p>Mobile / Web / B2B / B2C / SaaS</p>
                         </article>
                         <article class="services__space"></article>
                         <article class="services__txtbox">
-                            <p class="services__txt services__txt--numb">02  <span class="services__txttitl">Design</span></p>
-                            <p class="services__txt services__txt--txt">Social / Packaging / Collaterals</p>
+                            <h4>02  <span class="services__txttitl">Design</span></h4>
+                            <p>Social / Packaging / Collaterals</p>
                         </article>
                         <article class="services__space"></article>
                         <article class="services__txtbox">
-                            <p class="services__txt services__txt--numb">03  <span class="services__txttitl">Development</span></p>
-                            <p class="services__txt services__txt--txt">Shopify / Webflow / Html</p>
+                            <h4>03  <span class="services__txttitl">Development</span></h4>
+                            <p>Shopify / Webflow / Html</p>
                         </article>
                         <article class="services__space"></article>
                         <article class="services__txtbox">
-                            <p class="services__txt services__txt--numb">04  <span class="services__txttitl">Branding</span></p>
-                            <p class="services__txt services__txt--txt">Strategy / Applications / Brandbooks</p>
+                            <h4>04  <span class="services__txttitl">Branding</span></h4>
+                            <p>Strategy / Applications / Brandbooks</p>
                         </article>
                     </div>
                     <div class="services__img">
@@ -281,8 +288,7 @@
             </div>
         </section>
 
-
-
+<!---------------------------------------------------------------------------------------------------------------------------------------->
         <section class="work">
             <div class="work__legendbox">
                 <article class="work__legend">
@@ -297,38 +303,40 @@
                     <p class="work__legend--txt">We are commited to design <span class="work__legendtxtbold">beautiful, human centric</span> products that <span class="work__legendtxtbold">engage</span> with the right audiences through <span class="work__legendtxtbold">fantastic</span> user experience. </p>
                 </article>
             </div>
-
-            <div class="work__casesbox">
-                <div class="work__cases">
-                    <div class="work__subtitle">
-                        <svg class="work__subtitle work__subtitle--icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="threeModul">
+                <div class="threeModul__box">
+                    <div class="threeModul__sub">
+                        <svg class="threeModul__subSvg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.00022 13.9158L6.04914 10.3484L5.90858 10.0914L5.65154 9.95081L2.08421 8.00022L5.65163 6.04914L5.9086 5.9086L6.04914 5.65163L8.00022 2.08421L9.95081 5.65154L10.0914 5.90858L10.3484 6.04914L13.9158 8.00022L10.3485 9.95081L10.0914 10.0914L9.95081 10.3485L8.00022 13.9158Z" stroke="#282828" stroke-width="2"/>
                         </svg>
-                        <h4 class="work__subtitle work__subtitle--txt">our process</h4>
+                        <h4 class="">our work</h4>
                     </div>
-                    <div class="work__examplebox">
-                        <div class="work__example">
-                            <img src="https://ik.imagekit.io/nicecreativestudio/IMG_4907-original_1__goLuQY8g5t.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645706695484" alt="">
-                            <p>Strategy / UXUI/ Development</p>
-                            <h4>Meditation website</h4>
-                        </div>
-                        <div class="work__example">
-                            <img src="https://ik.imagekit.io/nicecreativestudio/IMG_4913-orginal_1__tRG7H8M0X.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645706741164" alt="">
-                            <p>Branding / Website / Packaging</p>
-                            <h4>Nuet - Sustainable Skincare</h4>
-                        </div>
-                        <div class="work__example">
-                            <img src="" alt="">
-                            <p>Strategy / UXUI</p>
-                            <h4>Open Source 3D Printing for Prothesis</h4>
-                        </div>
+                    <div class="threeModul__img threeModul__img--1">
+                        <a href="#"><img src="https://ik.imagekit.io/nicecreativestudio/case_1_aod74MWYl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646234208752" alt="Meditation website"></a>
                     </div>
-                    <div class="work__index">
-                        <p class="work__index work__index--txt" >03</p>
+                    <div class="threeModul__img threeModul__img--2">
+                        <a href="./pages/nuet.html"><img src="https://ik.imagekit.io/nicecreativestudio/IMG_4383-min_qF8IIeEvA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1646234378906" alt="Nuet - Sustainable Skincare"></a>
+                    </div>
+                    <div class="threeModul__img threeModul__img--3">
+                        <a href="#"><img src="https://ik.imagekit.io/nicecreativestudio/qwstion-biolight-collection-_yves-bachmann-12_IwpQFCHu9.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1646234208037" alt="Qwstion"></a>
+                    </div>
+                    <div class="threeModul__txt threeModul__txt--1">
+                        <p>Strategy / UXUI / Development</p>
+                        <h4>Meditation website</h4>
+                    </div>
+                    <div class="threeModul__txt threeModul__txt--2">
+                        <p>Branding / Website / Packaging</p>
+                        <h4>Nuet - Sustainable Skincare</h4>
+                    </div>
+                    <div class="threeModul__txt threeModul__txt--3">
+                        <p>Strategy / UXUI</p>
+                        <h4>Open Source 3D Printing for Prothesis</h4>
+                    </div>
+                    <div class="threeModul__ind">
+                        <p class="" >03</p>
                     </div>
                 </div>
             </div>
-
             <div class="work__read">
                 <div class="work__readbox">
                     <article class="work__readtxt">
@@ -350,18 +358,22 @@
             </div>
         </section>
 
+<!---------------------------------------------------------------------------------------------------------------------------------------->
         <section class="result">
-                <div>
-                    <a></a>
-                    <h2>what can we say about the impact that we make?</h2>
+                <div class="result__title">
+                    <svg class="result__titlesvg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.20402 12.0004L8.03488 8.26452L8.18335 8.18332L8.26454 8.03483L11.9996 1.20402L15.7355 8.03488L15.8167 8.18333L15.9651 8.26452L22.796 12.0004L15.9652 15.7355L15.8167 15.8166L15.7355 15.9651L11.9996 22.796L8.26454 15.9652L8.18334 15.8167L8.03483 15.7355L1.20402 12.0004Z" stroke="#282828" stroke-width="1.15537"/>
+                    </svg>
+                    <h2>what can we say about the </h2>
+                    <h2><span class="result__titleSp" >impact</span> that we make?</h2>
                 </div>
                 <div class="result__grid">
                     <div class="result__gridbox">
                         <div class="result__gridsub">
-                                <svg class="services__subtitle services__subtitle--icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00022 13.9158L6.04914 10.3484L5.90858 10.0914L5.65154 9.95081L2.08421 8.00022L5.65163 6.04914L5.9086 5.9086L6.04914 5.65163L8.00022 2.08421L9.95081 5.65154L10.0914 5.90858L10.3484 6.04914L13.9158 8.00022L10.3485 9.95081L10.0914 10.0914L9.95081 10.3485L8.00022 13.9158Z" stroke="#282828" stroke-width="2"/>
-                                </svg>
-                            <h4 class="services__subtitle services__subtitle--txt">OUR RESULTS</h4>
+                            <svg class="result__gridsub--icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.00022 13.9158L6.04914 10.3484L5.90858 10.0914L5.65154 9.95081L2.08421 8.00022L5.65163 6.04914L5.9086 5.9086L6.04914 5.65163L8.00022 2.08421L9.95081 5.65154L10.0914 5.90858L10.3484 6.04914L13.9158 8.00022L10.3485 9.95081L10.0914 10.0914L9.95081 10.3485L8.00022 13.9158Z" stroke="#282828" stroke-width="2"/>
+                            </svg>
+                            <h4 class="result__gridsub--txt">OUR RESULTS</h4>
                         </div>
                             <svg class="result__gridgraf" width="1091" height="473" viewBox="0 0 1091 473" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.1" d="M227 177C210.557 177 194.787 183.533 183.159 195.16C171.532 206.787 165 222.557 165 239C165 255.444 171.532 271.214 183.159 282.841C194.787 294.468 210.557 301 227 301C243.443 301 259.213 294.468 270.841 282.841C282.468 271.214 289 255.444 289 239C289 222.557 282.468 206.787 270.841 195.16C259.213 183.533 243.443 177 227 177ZM227 267.246C219.509 267.246 212.324 264.27 207.027 258.973C201.73 253.676 198.754 246.491 198.754 239C198.754 231.509 201.73 224.324 207.027 219.027C212.324 213.73 219.509 210.754 227 210.754C234.491 210.754 241.676 213.73 246.973 219.027C252.27 224.324 255.246 231.509 255.246 239C255.246 246.491 252.27 253.676 246.973 258.973C241.676 264.27 234.491 267.246 227 267.246Z" fill="#282828"/>
@@ -404,8 +416,73 @@
                         </div>
                     </div>
                 </div>
+                <div class="result__readmore">
+                    <p>Feel like making a change together? </p>
+                    <div class="result__container">
+                        <a href="" class="result__contact">Let's Talk</a>
+                        <svg width="177" height="76" viewBox="0 0 177 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M93.3334 64.2091C113.03 69.0359 134.555 70.7319 153.76 64.2622C160.749 61.9089 166.798 58.131 173.027 54.319C173.464 54.0523 173.602 53.4786 173.335 53.0391C173.065 52.6002 172.492 52.4616 172.053 52.7312C165.944 56.4687 160.019 60.1887 153.166 62.4965C134.233 68.8745 113.01 67.1399 93.6039 62.3587L93.6534 62.0542C94.1996 58.75 92.25 54.6473 88.9042 50.6822C84.1092 44.9979 76.5212 39.5283 70.3282 37.0317C67.545 35.9105 65.0245 35.3947 63.1235 35.6469C61.6411 35.8427 60.4945 36.4879 59.7683 37.5958C58.2224 39.9579 59.1121 43.0633 61.6671 46.2647C67.0089 52.9616 79.4815 60.3555 85.6667 62.1545C87.5983 62.7156 89.5541 63.2526 91.5291 63.7566C91.4488 64.3404 91.3678 64.9118 91.264 65.4637C90.9636 67.0355 90.4653 68.4716 89.1073 69.7222C86.9886 71.6691 84.0992 72.667 80.9936 73.1208C76.1464 73.8256 70.7702 73.1886 66.7505 72.4851C44.364 68.5661 30.304 55.2786 20.8178 40.7268C11.2402 26.0292 6.29905 10.0355 2.21162 0.908352C2.00231 0.438462 1.45098 0.230566 0.981091 0.439878C0.511201 0.64919 0.300933 1.20114 0.512617 1.6704C4.6257 10.8567 9.6155 26.9492 19.2591 41.7437C28.9941 56.684 43.4486 70.2965 66.428 74.3213C70.6152 75.0544 76.2139 75.699 81.2613 74.9646C84.7552 74.4547 87.9847 73.284 90.3688 71.0927C92.5074 69.1254 92.9559 66.8126 93.3334 64.2091ZM91.7906 61.901L91.8169 61.7496C92.2946 58.8613 90.4064 55.3509 87.4802 51.8842C82.8727 46.4221 75.585 41.1602 69.6304 38.7609C67.5893 37.937 65.7156 37.452 64.1775 37.4444C62.9087 37.4396 61.8911 37.7545 61.3286 38.6167C60.7936 39.4287 60.7429 40.3672 61.0189 41.3722C61.3409 42.5528 62.0909 43.8088 63.1219 45.1027C68.2555 51.5374 80.2431 58.6375 86.1866 60.3655C88.0329 60.9008 89.9015 61.415 91.7906 61.901Z" fill="#F0C4D4"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M174.583 50.9291C174.606 51.3362 174.47 51.8915 174.317 52.4869C173.953 53.9053 173.319 55.4809 173.05 56.2358C172.879 56.7218 173.134 57.253 173.618 57.4254C174.104 57.5972 174.636 57.3438 174.808 56.8577C175.136 55.9327 175.977 53.8314 176.294 52.1892C176.464 51.3082 176.469 50.5337 176.29 50.0254C175.987 49.1593 175.143 48.7899 173.764 49.1867C172.133 49.6572 169.3 51.279 166.489 50.9586C165.979 50.8995 165.516 51.2694 165.459 51.7785C165.4 52.2907 165.767 52.7523 166.279 52.8107C168.96 53.1147 171.678 51.9183 173.538 51.2282C173.892 51.0975 174.325 50.9891 174.583 50.9291Z" fill="#F0C4D4"/>
+                            </svg>
+                    </div>
+                </div>
         </section>
+
     </main>
+
+    <footer>
+        <div class="footer__title">
+            <h2><span>Nice</span> to meet you</h2>
+            <svg width="733" height="5" viewBox="0 0 633 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.60383" x2="633" y2="1.60383" stroke="#FEFBF3" stroke-width="2.15171"/>
+            </svg>
+
+        </div>
+        <p class="footer__description">Feel free to reach out if you want to collaborate with us or simply, have a chat.</p>
+        <svg class="line" width="22" height="4" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1H16" stroke="#FEFBF3" stroke-width="2"/>
+        </svg>
+            
+        <div class="footer__sitemap--links">
+            <h4>Sitemap</h4>
+            <a class="navLink navLink--under" href="./index.html">Home</a>
+            <a class="navLink navLink--under" href="./pages/about.html">About us</a>
+            <a class="navLink navLink--under" href="#">Careers</a>
+        </div>
+        <div class="footer__sitemap--links2">
+            <a class="navLink navLink--under" href="./pages/process.html">Process</a>
+            <a class="navLink navLink--under" href="#">Contact</a>
+        </div>
+        <div class="footer__social">
+            <h4>Social</h4>
+            <a class="navLink navLink--under" href="">Behance</a>
+            <a class="navLink navLink--under" href="">Dribble</a>
+            <a class="navLink navLink--under" href="">Linkedin</a>
+        </div>
+        <div class="footer__location">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8.5" cy="8.5" r="8" stroke="#FEFBF3"/>
+                <circle cx="8.5" cy="8.5" r="2.5" fill="#FEFBF3"/>
+            </svg>
+            <div>
+                <p class="footer__location--based">Based in Barcelona, working <span>worldwide</span> </p>
+                <p class="footer__location--time">Local time: <span id="time"></span></p>
+            </div>
+        </div>
+        <a class="arrowUp" href="#top">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="21" stroke="#FEFBF3" stroke-width="2"/>
+                <path d="M16.944 15.9062C18.4148 15.8431 19.8033 15.2055 20.8151 14.1288C21.8268 13.0521 22.3822 11.6209 22.3635 10.1388" stroke="#FEFBF3" stroke-width="1.68052" stroke-miterlimit="10"/>
+                <path d="M27.7506 16.0391C26.2595 15.9789 24.8526 15.3272 23.8372 14.2261C22.8217 13.125 22.2803 11.6642 22.331 10.1625" stroke="#FEFBF3" stroke-width="1.68052" stroke-miterlimit="10"/>
+                <path d="M22.3393 33.8672L22.3309 10.1384" stroke="#FEFBF3" stroke-width="1.68052" stroke-miterlimit="10"/>
+            </svg>
+                
+        </a>
+        <p class="copyright">Nice Creative Studio - Copyright 2022</p>
+    </footer>
+
+
+
         <!-- Scripts -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script> <!-- path of bodymovin library-->
     <script type="text/javascript" src="./assets/lottie.js"></script>

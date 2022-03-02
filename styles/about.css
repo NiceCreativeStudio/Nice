@@ -1,0 +1,425 @@
+.about__landing{
+    display: grid;
+    grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "..... title atom ....."
+    "star text1 atom ....."
+    "..... text2 atom ....."
+    "..... text3 atom ....."
+    "..... arrow epygraph .....";
+    margin-top: 7rem;
+}
+.about__landing span{
+    font-family: 'Maine Bold Italic';
+    font-weight: 800;
+}
+
+.about__landing--title{
+    grid-area: title;
+    font-family: "Maine Book";
+    text-align: left;
+    font-weight: 400;
+    color: #282828;
+    font-size: 3.8rem;
+}
+.about__landing--title span{
+    font-family: 'Maine Book';
+    font-weight: 400;
+}
+
+.about__landing--scribble{
+    position: absolute;
+    margin-left: -5rem;
+    margin-top: -2rem;
+}
+
+.about__landing--star{
+    grid-area: star;
+    margin-left: auto;
+    margin-right: 1.6rem
+}
+
+
+.about__landing--text1{
+    grid-area: text1;
+}
+.about__landing--text2{
+    grid-area: text2;
+}
+.about__landing--text3{
+    grid-area: text3;
+}
+
+
+.about__landing--atom{
+    grid-area: atom;
+    margin: auto;
+}
+
+.about__landing--more{
+    grid-area: arrow;
+    display: flex;
+    align-items: center;
+}
+.about__landing--more h3{
+    margin-left: 3rem;
+    font-family: "Maine Book";
+    color: #282828;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.about__landing--epigraph{
+    grid-area: epygraph;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+.about__landing--epigraph p{
+    font-family: 'Maine Extra Bold';
+    font-size: 1rem;
+    width: 50%;
+}
+
+
+
+.about__philosophy {  
+    display: grid;
+    grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
+    grid-template-rows: min-content min-content 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "..... title ..... ....."
+    "..... description ..... ....."
+    "..... simplicity transparency ....."
+    "..... collaboration respect .....";
+    margin-top: 12rem;
+    margin-bottom: 7rem;
+}
+.about__philosophy h2{
+    grid-area: title;
+    font-family: "Maine Book";
+    text-align: left;
+    font-weight: 400;
+    color: #282828;
+    font-size: 3rem;
+}
+.about__philosophy h3{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+}
+.about__philosophy h4 {
+    grid-area: description;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #2828283a;
+}
+.about__philosophy p{
+    line-height: 2rem;
+}
+.philosophy__container{
+    display: flex;
+    align-items: center;
+    margin: 2.5rem 2.5rem;
+}
+.philosophy__container svg{
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+.philosophy__container div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.simplicity{
+    grid-area: simplicity;
+}
+.transparency{
+    grid-area: transparency;
+}
+.collaboration{
+    grid-area: collaboration;
+}
+.respect{
+    grid-area: respect;
+}
+
+.team__intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 80%;
+    margin: auto;
+    color: #282828;
+}
+.team__intro h2{
+    font-family: 'Maine Light';
+    font-size: 2.5rem;
+}
+.team__intro h3{
+    font-family: 'Maine Extra Bold';
+    margin-top: 4rem;
+}
+
+
+.about__team{
+    display: flex;
+    justify-content: center;
+    gap: 0 1.5rem;
+    margin: 8rem 12.5% 8rem 12.5%;
+}
+
+.team__card{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.team__card p{
+    font-family: 'Maine';
+    color: #2828283a;
+    margin: 0.8rem;
+}
+.team__card h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    width: 30%;
+}
+
+
+.about__collab{
+    display: grid;
+    grid-template-columns: 12.5% 30% 22.5% 22.5% 12.5%;  
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "..... collab ux freelancer ....."
+    "..... arrow ux freelancer ....."; 
+}
+
+.about__collab h2{
+    grid-area: collab;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 60%;
+}
+.about__collab h2 span{
+    color: #DE5D37;
+    font-family: 'Maine Bold Italic';
+}
+.about__collab svg{
+    margin: 1rem;
+}
+.about__collab p{
+    font-size: 1.2rem;
+    width: 95%;
+}
+.about__collab .collab__arrow{
+    grid-area: arrow;
+}
+.collab__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 1rem;
+}
+
+.ux{
+    grid-area: ux;
+}
+.freelancer{
+    grid-area: freelancer;
+}
+
+.collab__ux--title{
+    display: flex;
+    align-items: center;
+}
+.collab__freelancer--title{
+    display: flex;
+    align-items: center;
+}
+
+
+/*--------------------------------lau  27 02------------------------------------*/
+
+.team {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.team__title {
+    display: grid;
+    grid-template-areas: ". txt .";
+    grid-template-columns: 1fr 10fr  1fr;
+    height: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
+    }
+
+.team__txt {
+    grid-area: txt;
+    margin-top: 7.5rem;
+}
+    .team__txt h2 {
+        font-family: 'Maine Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    .team__txt p {
+        font-family: 'Maine Extra Bold';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        margin-top: 3rem;
+    }
+
+.team__our{
+    height: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
+    margin-top: 7.5rem;   /*----- def -----*/
+    margin-bottom: 9rem; /*---- def ----*/
+    }
+
+.team__box {
+    display: grid;
+    grid-template-areas: 
+    ". per1 per2 per3 per4 .";
+    grid-template-columns: 1fr 2.50fr 2.50fr 2.50fr 2.50fr 1fr;
+    height: auto;
+    width: 100%;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    }
+    .team__box p {
+        font-family: 'Montserrat', sans-serif;
+        color: #A1A1A1;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        }
+    .team__box h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        width: 50%;
+        }
+    .team__box img {
+        object-fit: cover;
+        width: 97%;
+        height: 80%;
+        }
+        .team__per1 {
+            grid-area: per1;
+            }
+        .team__per2 {
+            grid-area: per2;
+            }
+        .team__per3 {
+            grid-area: per3;
+            }
+        .team__per4 {
+            grid-area: per4;
+            }
+
+.team__careers {
+    display: grid;
+    grid-template-areas: ". txt1 txt2 txt3 .";
+    grid-template-columns: 1fr 5fr 3.2fr 1.8fr 1fr;
+    height: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
+    }
+
+.team__careers1 {
+    grid-area: txt1;
+}
+    .team__careers1 h4 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    } 
+    .team__careers1Sp {
+        font-family: 'Maine Bold Italic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #DE5D37;
+    }   
+    .team__careers1 svg {
+        margin-top: 2rem;
+    }   
+
+.team__careers2 {
+    grid-area: txt2;
+    position: relative;
+    width: 90%;
+}
+
+.team__careers3 {
+    grid-area: txt3;
+    position: relative;
+}
+
+.team__careerstxt {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .85rem;
+    line-height: 1.25rem;
+    position: absolute;
+    top: 4rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.team__careersSub {
+    height: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    position: relative; 
+}
+.team__careersSvg {
+    width: 2.25rem;
+    height: 2.25rem;
+    position: absolute;
+}
+.team__careersSub h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 2.5rem;
+    align-self: center;
+}
+
