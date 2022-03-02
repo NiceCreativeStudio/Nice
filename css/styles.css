@@ -161,45 +161,8 @@ a{
     position: relative;
 }
 
-.navLink__index{
-    position: relative;
-    font-size: 1rem;
-    padding-bottom: 0.5rem;
-    text-decoration: none;
-    color:#fdfbfb;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    margin: 1rem 1rem;
-    text-transform: uppercase;
-}
-
-.indexactive:after{
-    content: "";
-    position: relative;
-    height: 2px;
-    background-color:#fdfbfb;
-    width: 0;
-    left: 50%;
-    bottom: 0;
-}
-.navLink__index:after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color:#fdfbfb;
-    width: 0;
-    left: 50%;
-    bottom: 0;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-transition: 0.5s ease all;
-    transition: 0.5s ease all;
-}
-.navLink__index:hover:after {
-    width: 75%;
+.header__index a{
+    color: #fdfbfb;
 }
 
 .firstNavbar__index{
