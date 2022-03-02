@@ -253,8 +253,198 @@ div#animContainer path {
     z-index: 1;
 }
 
+/*========================================= NAV INDEX ========================================= */
 
+.header__index {
+    width: 100%;
+    height: 50rem;
+    background-image: url(https://ik.imagekit.io/nicecreativestudio/bg-nice__1__wW45w7CKa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646233835720);
+    background-size: cover;
+    position: relative;
+}
 
+.navLink__index{
+    position: relative;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color:#fdfbfb;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    margin: 1rem 1rem;
+}
+
+.indexactive:after{
+    content: "";
+    position: relative;
+    height: 2px;
+    background-color:#fdfbfb;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+}
+.navLink__index:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color:#fdfbfb;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+.navLink__index:hover:after {
+    width: 75%;
+}
+
+.firstNavbar__index{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstNavbar__index a{
+    text-decoration: none;
+    color: #fdfbfb;
+}
+.logo__index{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    fill: #fdfbfb;
+}
+.firstNavbar__indexcenter{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstNavbar__indexright{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.darkSwitch__index{
+    fill: #fdfbfb;
+    margin: 1rem 2rem;
+    cursor: pointer;
+}
+
+.nav__txtcentral {
+    width: 100%;
+    height: auto;
+    padding-top: 7rem;
+    position: relative;
+}
+    .nav__txtH5{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 0.75rem;
+        width: 10rem;
+        line-height: 1rem;
+        color: #FEFBF3;
+        position: absolute;
+        left: 7.5%;
+        top: 7rem;
+    }
+    .nav__txtH1up{
+        font-family: 'Maine Regular'; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10rem;
+        line-height: 10rem;
+        color: #FEFBF3;
+        position: absolute;
+        left: 7.5%;
+        top: 13rem;
+    }
+    .nav__txtH1dw{
+        font-family: 'Maine Regular'; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10rem;
+        line-height: 10rem;
+        color: #FEFBF3;
+        position: absolute;
+        left: 7.5%;
+        top: 22.5rem;
+    }
+    .nav__txtH1Sp{
+        font-family: 'Maine Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10rem;
+        line-height: 10rem;
+        color: #FEFBF3;
+    }
+    .nav__txtH4{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #FEFBF3;
+        position: absolute;
+        width: 20rem;
+        right: 7.5%;
+        top: 27rem;
+    }
+
+.social__nav{
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.social__navline{
+    width: 100%;
+    height: 1px;
+    background-color:  #FEFBF3;
+    top: 0;
+}
+.social__navbox{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 2rem;
+}
+.social__navleft{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+    .social__navleft p{
+        font-family: 'Maine Regular Italic';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding-left: 2rem;
+        color:  #FEFBF3;
+    }
+    .social__navfrig{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-self: end;
+        justify-content: end;
+    }
+    .social__navfrig ul{
+        display: flex;
+    }
+    .social__navfrig ul li a {
+        text-align: end;
+        padding-left: 1.5rem;
+    }
 
 
 /*========================================= FOOTER ========================================= */
