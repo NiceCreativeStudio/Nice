@@ -10,71 +10,71 @@ html{
 /*========================================= FONTS ========================================= */
 @font-face {
     font-family: 'Maine Bold Italic';
-    src: url('./assets/Maine/Maine-BoldItalic.otf');
+    src: url('../assets/Maine/Maine-BoldItalic.otf');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Book Italic';
-    src: url('./assets/Maine/Maine-BookItalic.otf');
+    src: url('../assets/Maine/Maine-BookItalic.otf');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Extra Bold Italic';
-    src: url('./assets/Maine/Maine-ExtraBoldItalic.otf');
+    src: url('../assets/Maine/Maine-ExtraBoldItalic.otf');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Light Italic';
-    src: url('./assets/Maine/Maine-LightItalic.otf');
+    src: url('../assets/Maine/Maine-LightItalic.otf');
     font-weight: lighter;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Medium Italic';
-    src: url('./assets/Maine/Maine-MediumItalic.otf');
+    src: url('../assets/Maine/Maine-MediumItalic.otf');
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Regular Italic';
-    src: url('./assets/Maine/Maine-RegularItalic.otf');
+    src: url('../assets/Maine/Maine-RegularItalic.otf');
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Light';
-    src: url('./assets/Maine/Maine-Light.otf');
+    src: url('../assets/Maine/Maine-Light.otf');
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Regular';
-    src: url('./assets/Maine/Maine-Regular.otf');
+    src: url('../assets/Maine/Maine-Regular.otf');
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Extra Bold';
-    src: url('./assets/Maine/Maine-ExtraBold.otf');
+    src: url('../assets/Maine/Maine-ExtraBold.otf');
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Book';
-    src: url('./assets/Maine/Maine-Book.otf');
+    src: url('../assets/Maine/Maine-Book.otf');
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Maine Medium';
-    src: url('./assets/Maine/Maine-Medium.otf');
+    src: url('../assets/Maine/Maine-Medium.otf');
     font-style: italic;
     font-display: swap;
 }

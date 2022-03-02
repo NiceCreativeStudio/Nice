@@ -1,9 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
 .heroimg {
     width: 100%;
     height: 37rem;
-    background-image: url(https://ik.imagekit.io/nicecreativestudio/duane-mendes-SPtDIgUMEqs-unsplash_99Q8BK7R1r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1646083016353);
+    background-image: url(https://ik.imagekit.io/nicecreativestudio/Rectangle_60__1__qbLEMJlHJZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646138083105);
     background-position: center;
-    background-size: 100ch;
+    background-size: cover;
     position: relative;
     }
 
@@ -36,7 +46,7 @@
     position: absolute;
 }
 .centraltxt__sub h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
@@ -79,11 +89,12 @@
         margin-bottom: 2rem;
     }
     .centraltxt__mission p{
-        font-family: 'Montserrat', sans-serif;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
         font-size: 1.25rem;
         line-height: 2rem;
+    
     }
 
 .centraltxt__services {
@@ -98,7 +109,7 @@
         margin-bottom: 2rem;
     }
     .centraltxt__services p{
-        font-family: 'Montserrat', sans-serif;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
         font-size: 1.25rem;
@@ -201,30 +212,44 @@
 }
 
 .multimedia__boxvid{
-    height: auto;
+    height: 100vh;
     width: 90%;
     margin-left: 5%;
     margin-top: 1.5rem;
+    position: relative;
 }
 
+.multimedia__controls{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    cursor: pointer;
+}
+
+.multimedia__btn{
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: transparent;
+}
+.multimedia__btn button:before{
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: transparent;
+}
 
 .legendtxt{
     width: 100%;
     height: auto;
     margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
 .legendtxt__box {
-    width: 80%;
-    display: flex;
-    align-self: center;
-    margin-left: 10%;
+    width: 100%;
+    text-align: center;
 }
-
-    .legendtxt__boxsvg {
-        margin-top: 1.5rem;
-    }
     .legendtxt__box h2 {
         font-family: 'Maine Regular'; 
         font-style: normal;
@@ -241,21 +266,27 @@
         font-size: 2.5rem;
         line-height: 2.5rem;
     }
+    .legendtxt__boxgray {
+        font-family: 'Maine Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+        color: #DDDDDD;
+    }
 
 
 .backend{
-    height: 80rem;
+    height: auto;
     width: 100%;
-    background-color: #f6f6f6;
 }
 
 .backend__box{
     height: auto;
     width: 75%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     margin-left: 12.5%;
-    padding-top: 10rem;
 }
 
     .backend__txt h2{
@@ -311,15 +342,118 @@
     object-fit: cover;
 }
 
+
+
+.grid{
+    background-color: #f2f2f2;
+    height: auto;    
+    width: 100%;
+    margin-left: 0;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-top: 8rem;   
+}
+
+.grid__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto);
+    grid-gap: 0.75rem;
+    grid-template: 
+    "img1 . img2"
+    "img3 txt img4"
+    ". img5 ."
+    "img6 . img7"
+    ". . img8" ;
+    min-height: 1300px;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.grid__img1{
+    grid-area: img1;
+}
+.grid__img2{
+    grid-area: img2;
+}
+.grid__img3{
+    grid-area: img3;
+}
+.grid__img4{
+    grid-area: img4;
+}
+.grid__img5{
+    grid-area: img5;
+}
+.grid__img6{
+    grid-area: img6;
+}
+.grid__img7{
+    grid-area: img7;
+}
+.grid__img8{
+    grid-area: img8;
+}
+.grid__txt{
+    grid-area: txt;
+
+}
+.grid__txtbox{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+.grid__txt p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    bottom: 2rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+}
+.grid__txt svg{
+    width: 80px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+}
+
+.grid__wrap{
+    width: 100%; 
+    height: 100%; 
+    margin:0;
+    border-radius: 0.5rem;
+    background: url(https://ik.imagekit.io/nicecreativestudio/IMG_5229_r2vJLphmXO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1646083012115) no-repeat #e6e6e6; 
+    background-size: 100%;
+    background-position:center center;
+    -webkit-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+     -moz-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+      -ms-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+       -o-transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+          transition: all 500ms cubic-bezier(0.000, 0.000, 0.580, 1.000); /* ease-out */
+}
+.grid__wrap:hover{
+    background-size:130%;
+}
+
+
 .backend__lets{
     width: 100%;
     height: auto;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-bottom: 6rem;
 }
 .backend__lets p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
@@ -339,7 +473,6 @@
     text-decoration: underline;
     text-underline-offset: 0.75rem;
 }
-
 
 .backend__href{
     height: auto;
@@ -365,7 +498,8 @@
         font-weight: normal;
         font-size: 1rem;
         line-height: 1.5rem;
-        width: 60%;
+        width: 12rem;
+        padding-left: 1.5rem;
     }
 
 .backend__hrefrig{
@@ -381,6 +515,7 @@
         font-weight: normal;
         font-size: 1rem;
         line-height: 1.5rem;
-        width: 60%;
+        width: 12rem;
         text-align: end;
+        padding-right: 1.5rem;
     }
